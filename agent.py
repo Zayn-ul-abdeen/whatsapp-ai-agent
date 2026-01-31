@@ -1,12 +1,11 @@
 import os
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import google.generativeai as genai
-
+from google import genai
 # --- CONFIGURATION (Fill these in!) ---
 # In Glitch, it is safer to use .env file, but for testing, you can paste keys here
 # WARNING: Don't share this link with others if you paste keys directly.
-client = genai.Client(api_key="YOUR_API_KEY")
+client = genai.Client(api_key="AIzaSyAKI24H7rbNSABDtkavDKlPhLu7yJ-qMfQ")
 
 # Setup Brain
 genai.configure(api_key=Gemini_API_Key)
